@@ -1,4 +1,10 @@
 <h1><%= @user.email %></h1>
+<%= @ses_id %>
+<%= @par_id %>
+
+<% if @ses_id == @par_id %>
+	Yup
+<% end %>
 
 <% if @is_you %>
 	<p>This is you</p>
